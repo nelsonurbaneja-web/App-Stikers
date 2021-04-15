@@ -1,0 +1,52 @@
+.main-header {
+  width: 100%;
+  background-color: black;
+}
+
+.header {
+  width: 100%;
+  padding: 1rem;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  @media screen and (min-width: 680px) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  img {
+    width: 300px; 
+    padding-bottom: 1rem;
+    @media screen and (min-width: 680px) {
+      padding-bottom:0;
+    }
+  }
+}
+
+.form-seach {
+  input {
+    // background-color: red;
+    border: 0;
+    height: 100%;
+    padding: .5rem;
+    border-top-left-radius: .5rem;
+    border-bottom-left-radius: .5rem;
+    background-color: white;
+    &:active, &:focus {
+      border: 0;
+      outline: 0;
+    }
+  }
+  button {
+    border: 0;
+    outline: 0;
+    padding: .5rem .5rem;
+    height: 100%;
+    color: rgba(0,0,0,.5);;
+    background-color: white;
+    cursor: pointer;
+    border-top-right-radius: .5rem;
+    border-bottom-right-radius: .5rem;
+    border-left: 1px solid rgba(0,0,0,.2);
+  }
+}

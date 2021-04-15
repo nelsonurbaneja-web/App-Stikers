@@ -1,0 +1,12 @@
+.stiker {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  cursor: pointer;
+  transition: transform .3s;
+  &:hover {
+    transform: scale(1.4);
+    transition: transform .3s;
+  }
+}
