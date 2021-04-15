@@ -1,0 +1,21 @@
+.menu-trending {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding-left: 0;
+  grid-gap: 1rem;
+  @media screen and(min-width: 680px) {
+    justify-content: flex-start;
+  }
+  li {
+    margin-bottom: .5rem;
+    cursor: pointer;
+    font-size: 1.1rem;
+    color: royalblue;
+    &:hover {
+      color: skyblue;
+    }
+  }
+}

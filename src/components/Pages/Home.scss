@@ -1,0 +1,11 @@
+.home-container {
+  @media screen and(min-width: 680px) {
+    display: flex
+  }
+}
+.home-container--grid {
+  flex: 8;
+}
+.home-container--menu {
+  flex: 2;
+}
