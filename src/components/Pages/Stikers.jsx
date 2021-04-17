@@ -4,6 +4,7 @@ import { useStikers } from '../../customHooks/useStikers'
 import Spinner from '../Atoms/Spinner/Spinner';
 import GridStiker from '../Molecules/GridStiker'
 import debounce from "just-debounce-it";
+import { Helmet } from 'react-helmet';
 
 const Stikers = ({params}) => {
   const { keyword } = params
@@ -27,6 +28,9 @@ const Stikers = ({params}) => {
 
   return (
    <>
+    <Helmet>
+      <title>Busqueda: {decodeURI(keyword)}</title>
+    </Helmet>
     {
       loading ? <Spinner /> : 
       <>

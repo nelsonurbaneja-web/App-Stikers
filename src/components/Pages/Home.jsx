@@ -1,4 +1,5 @@
 import React from 'react'
+import { Helmet } from 'react-helmet';
 import { useStikers } from '../../customHooks/useStikers';
 import Menu from '../Atoms/Menu/MenuLazy';
 import Spinner from '../Atoms/Spinner/Spinner';
@@ -11,6 +12,9 @@ const Home = () => {
 
   return (
    <>
+    <Helmet>
+      <title>Giffy Home</title>
+    </Helmet>
     <h1 className="center">Ultimas busquedas :</h1>
     <FormSearch />
     {

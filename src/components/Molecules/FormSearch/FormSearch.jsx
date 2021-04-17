@@ -4,7 +4,7 @@ import { useLocation } from 'wouter'
 const FormSearch = () => {
   const [keyword, setKeyword] = useState('');
   const changeKeyword = (e) => setKeyword(e.target.value)
-  const [path, pushLocation] = useLocation();
+  const [, pushLocation] = useLocation();
 
   const handleSubmit = (e) => {
     e.preventDefault()
