@@ -1,9 +1,11 @@
 .grid-stiker {
   --columns: 2;
   width: 100%;
+  min-height: 100vh;
   display: grid;
   justify-items: center;
   grid-template-columns: repeat(var(--columns), 1fr);
+  grid-template-rows: masonry;
   grid-gap: 1rem;
   padding: 2rem;
   @media screen and (min-width: 580px) {

@@ -6,8 +6,10 @@
   flex-wrap: wrap;
   padding-left: 0;
   grid-gap: 1rem;
+  padding: 1rem;
   @media screen and(min-width: 680px) {
     justify-content: flex-start;
+    padding: 0;
   }
   li {
     margin-bottom: .5rem;

@@ -1,16 +1,19 @@
-import React from 'react';
-import Stiker from '../Atoms/Stiker';
+import React, { Suspense } from 'react';
 import './GridStiker.scss'
+
+const Stiker = React.lazy(() => import('../Atoms/Stiker'))
 
 const GridStiker = ({stikers}) => {
   return (
-    <div className="grid-stiker">
-      {
-        stikers.map(stiker => 
-         <Stiker key={stiker.images.original.url} stiker={stiker}/>
-        )    
-      }
-    </div>
+    <Suspense fallback={'Cargando stikers'}>
+      <div className="grid-stiker">
+        {
+          stikers.map(stiker => 
+          <Stiker key={stiker.images.original.url} stiker={stiker}/>
+          )    
+        }
+      </div>
+    </Suspense>
   )
 }
 

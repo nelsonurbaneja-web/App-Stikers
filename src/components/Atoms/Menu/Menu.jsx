@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react'
+import React, { useEffect, useState } from 'react'
 import { Link } from 'wouter'
 import { getTendring } from '../../../services/getTrending'
 import './Menu.scss'
@@ -9,12 +9,13 @@ const Menu = () => {
   useEffect(() => {
     getTendring().then(data => setTrendings(data))
   }, [])
+
   return (
    <>
-    <ul className="menu-trending">
+    <ul className="menu-trending" >
       {
         trendings.map(trending => 
-          <Link to={`/search/${trending}`}><li>{trending}</li></Link>
+          <Link key={trending} to={`/search/${trending}`}><li >{trending}</li></Link>
         )
       }
     </ul>

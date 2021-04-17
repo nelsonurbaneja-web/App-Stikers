@@ -1,6 +1,6 @@
 import React from 'react'
 import { useStikers } from '../../customHooks/useStikers';
-import Menu from '../Atoms/Menu/Menu';
+import Menu from '../Atoms/Menu/MenuLazy';
 import Spinner from '../Atoms/Spinner/Spinner';
 import GridStiker from '../Molecules/GridStiker';
 import './Home.scss'
