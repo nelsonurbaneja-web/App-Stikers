@@ -15,6 +15,7 @@ const App = () => {
         <Route path="/stiker/:id" component={CurrentStiker}/>
         <Route path="/search/:keyword" component={Stikers}/>
       </StikersContextProvider>
+      
     </>
   )
 }

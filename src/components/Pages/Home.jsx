@@ -2,6 +2,7 @@ import React from 'react'
 import { useStikers } from '../../customHooks/useStikers';
 import Menu from '../Atoms/Menu/MenuLazy';
 import Spinner from '../Atoms/Spinner/Spinner';
+import FormSearch from '../Molecules/FormSearch/FormSearch';
 import GridStiker from '../Molecules/GridStiker';
 import './Home.scss'
 
@@ -11,6 +12,7 @@ const Home = () => {
   return (
    <>
     <h1 className="center">Ultimas busquedas :</h1>
+    <FormSearch />
     {
       loading ?  <Spinner /> :  
       <div className="home-container">
